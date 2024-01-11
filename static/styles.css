@@ -20,13 +20,15 @@ sub {
 
 /* NAVBAR */
 .container {
-    display: inline-block;
+    display: inline;
+    justify-self: center;
     grid-area: nav;
     background-color: rgb(17, 24, 39);
     border: 1px dashed red;
+    border-radius: 10px 30px;
     height: 60px;
-    width: 100%;
-    min-width: 200px;
+    width: 95%;
+    min-width: 340px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -67,10 +69,14 @@ a:hover {
 /* NAVBAR */
 
 .side-display {
-    grid-area: side;
+    position: fixed;
+    width: 200px;
     padding: 0 10px 0 0;
+    grid-area: side;
 }
 
 .main-content {
+    margin-left: 200px;
+    padding: 0 0 0 10px;
     grid-area: main;
 }
